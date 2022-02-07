@@ -19,14 +19,14 @@ gpasswd -a $name wheel
 #gpasswd -a $USERN wheel
 
 systemctl enable dhcpcd
-pacman -S gnome gnome-extra <<EOF
-
-
-
-
-
-
-EOF
+#pacman -S gnome gnome-extra <<EOF
+#
+#
+#
+#
+#
+#
+#EOF
 touch /etc/X11/xorg.conf.d/00-keyboard.conf
 echo 'Section "InputClass"' >> /etc/X11/xorg.conf.d/00-keyboard.conf
 echo '       Identifier             "keyboard Layout"' >> /etc/X11/xorg.conf.d/00-keyboard.conf
