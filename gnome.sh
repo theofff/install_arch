@@ -39,10 +39,10 @@ pacman -S sudo <<EOF
 EOF
 sed -ire 's/#.*\(%wheel.*NOPASSWD.*\)/\1/' /etc/sudoers
 #sed -ire 's/#.*\(%wheel.*\)/\1/' /etc/sudoers
-systemctl enable gdm
-pacman -S code<<EOF
-
-EOF
+#systemctl enable gdm
+#pacman -S code<<EOF
+#
+#EOF
 pacman -S devtools<<EOF
 
 EOF
