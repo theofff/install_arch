@@ -1,5 +1,5 @@
 #!/bin/bash
-source /install_arch/credentials.env
+#source /install_arch/credentials.env
 ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
 hwclock --systohc
 sed -ire 's/#fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/' /etc/locale.gen
