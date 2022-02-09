@@ -46,4 +46,5 @@ sed -ire 's/#.*\(%wheel.*NOPASSWD.*\)/\1/' /etc/sudoers
 pacman -S devtools<<EOF
 
 EOF
+sudo systemctl enable --now sshd
 reboot
