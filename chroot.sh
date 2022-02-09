@@ -17,8 +17,8 @@ sed -ire 's/block/block lvm2/' /etc/mkinitcpio.conf
 sed -ire 's/keyboard/keyboard keymap/' /etc/mkinitcpio.conf
 mkinitcpio -p linux
 passwd <<EOF
-$PASSWORD_ROOT
-$PASSWORD_ROOT
+password
+password
 EOF
 #pacman -S grub <<EOF
 #
