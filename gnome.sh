@@ -1,5 +1,5 @@
 #!/bin/bash
-source /credentials.env
+source /install_arch/credentials.env
 #read -p "Choisissez un nom d'utilisateur : " name
 #read -p "Choisissez un mot de passe : " -s mdp
 #useradd -m $name
