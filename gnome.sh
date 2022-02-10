@@ -1,22 +1,22 @@
 #!/bin/bash
-#source /install_arch/credentials.env
-read -p "Choisissez un nom d'utilisateur : " name
-read -p "Choisissez un mot de passe : " -s mdp
-useradd -m $name
-passwd $name <<EOF
-$mdp
-$mdp
-EOF
-
-#useradd -m $USER
-#passwd $USER <<EOF
-#$PASSWORD
-#$PASSWORD
+source ./install_arch/credentials.env
+#read -p "Choisissez un nom d'utilisateur : " name
+#read -p "Choisissez un mot de passe : " -s mdp
+#useradd -m $name
+#passwd $name <<EOF
+#$mdp
+#$mdp
 #EOF
 
-gpasswd -a $name wheel
+useradd -m $USER
+passwd $USER <<EOF
+$PASSWORD
+$PASSWORD
+EOF
 
-#gpasswd -a $USER wheel
+#gpasswd -a $name wheel
+
+gpasswd -a $USER wheel
 
 systemctl enable dhcpcd
 #pacman -S gnome gnome-extra <<EOF
