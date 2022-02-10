@@ -9,4 +9,6 @@ bash install_arch/disk.sh
 
 bash install_arch/chroot.sh
 
+exit
+
 bash install_arch/gnome.sh
