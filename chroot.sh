@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./install_arch/credentials.env
+#source ./install_arch/credentials.env
 ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
 hwclock --systohc
 sed -ire 's/#fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/' /etc/locale.gen
@@ -17,8 +17,8 @@ sed -ire 's/block/block lvm2/' /etc/mkinitcpio.conf
 sed -ire 's/keyboard/keyboard keymap/' /etc/mkinitcpio.conf
 mkinitcpio -p linux
 passwd <<EOF
-$PASSWORD_ROOT
-$PASSWORD_ROOT
+password
+password
 EOF
 #pacman -S grub <<EOF
 #
