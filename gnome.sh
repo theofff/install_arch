@@ -47,4 +47,3 @@ pacman -S devtools<<EOF
 
 EOF
 systemctl enable --now sshd
-reboot
