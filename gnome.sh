@@ -18,7 +18,7 @@ gpasswd -a $name wheel
 
 #gpasswd -a $USER wheel
 
-systemctl enable dhcpcd
+#systemctl enable dhcpcd
 #pacman -S gnome gnome-extra <<EOF
 #
 #
