@@ -11,4 +11,6 @@ bash install_arch/chroot.sh
 
 exit
 
+systemctl --now dhcpcd
+
 bash install_arch/gnome.sh
